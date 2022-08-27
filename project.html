@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"Online" inventory</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="project.html">inventory system</a>
+            <ul class="navbar-nav">
+            </ul>
+  </nav>
+  </div>
+<body class="container">
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-start-date">Date of inventory</label>
+            <input type="date" class="form-control" id="new-start-date">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="item">Item</label>
+            <input type="text" class="form-control" id="item" placeholder="Item name">
+          </div>
+          <div class="form-group">
+            <label for="barcode">Barcode</label>
+            <input type="text" class="form-control" id="barcode" placeholder="Item code">
+          </div>
+          <div class="form-group">
+            <label for="Quantity">Quantity</label>
+            <input type="text" class="form-control" id="item-quantity" placeholder="Quantity">
+          </div>
+        </div>
+      </div>
+      <div>
+        <button id="add" class="btn btn-success form-control">Create</button>
+      </div>
+    </div>
+  </div>
+  <h1>"Online" inventory system</h1>
+  <table id="list" class="table table-dark table-striped">
+    <tr>
+      <th>Item</th>
+      <th>Barcode</th>
+      <th>Date added</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+  </table>
+
+</body>
+</footer>
+
+
+
+
+  <script src="script.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
